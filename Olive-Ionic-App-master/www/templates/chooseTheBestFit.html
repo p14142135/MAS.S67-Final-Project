@@ -1,0 +1,24 @@
+<ion-view title="" id="page12" >
+  <ion-content padding="true" class="has-header" >
+    <div id="chooseTheBestFit-container13" class="creator-container"></div>
+    <div id="chooseTheBestFit-container14" class="creator-container"></div>
+    <h3  style="color:#000000;text-align:center;margin-top: 10px;">Choose the closest match</h3>
+    <div>
+    <form id="chooseTheBestFit-form8" class="list" style="margin-top: 20px;"> 
+<!--       <ion-radio id="chooseTheBestFit-radio10">Radio</ion-radio>
+ -->
+      <ion-list>
+		<!-- <ion-radio ng-repeat="food in foodNames" ng-model="choice" ng-value="food">{{food}}</ion-radio> -->
+		<!-- <ion-item style="background-color: #F06966 !important"> --><ion-radio style="background-color: #61B390 !important; text-decoration-color: #ffffff;" ng-model="$parent.choice" ng-value="foodNames[0]">{{foodNames[0]}}</ion-radio><!-- </ion-item> -->
+		<div><ion-radio style="background-color: #99CDA9 !important" ng-model="$parent.choice" ng-value="foodNames[1]">{{foodNames[1]}}</ion-radio></div>
+		<div><ion-radio style="background-color: #ACE6C0 !important" ng-model="$parent.choice" ng-value="foodNames[2]">{{foodNames[2]}}</ion-radio></div>
+		<div><ion-radio style="background-color: #D7FFDF !important" ng-model="$parent.choice" ng-value="foodNames[3]">{{foodNames[3]}}</ion-radio></div>
+		<div><ion-radio style="background-color: #E1EACD !important" ng-model="$parent.choice" ng-value="foodNames[4]">{{foodNames[4]}}</ion-radio></div>
+
+		<button id="chooseMatch" style="font-weight:600;margin-top: 20px;" class="button button-dark  button-block" ng-click = "chooseMatch()">Done</button>
+		
+	</ion-list>
+    </form>
+    </div>
+  </ion-content>
+</ion-view>
